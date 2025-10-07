@@ -45,7 +45,7 @@ class MovieListItemSchema(BaseModel):
     overview: str
 
 
-class  MovieListResponseSchema(BaseModel):
+class MovieListResponseSchema(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     movies: list[MovieListItemSchema]
